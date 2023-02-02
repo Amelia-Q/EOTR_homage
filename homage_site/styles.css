@@ -37,14 +37,19 @@ header {
   border-bottom: 2px solid #f38530;
   text-transform: uppercase;
   font-size: 1.25rem;
+  margin-left: 80px;
+  margin-top: 20px;
 }
 
 .nav-icon {
-  align-items: center;
+  margin-right: 15px;
+  margin-top: 25px;
 }
 
 .logo-container {
   display: flex;
+  justify-content: center;
+  background-color: red;
 }
 
 .logo {
@@ -63,6 +68,10 @@ header {
   padding-top: 75px;
 }
 
+.announcements-image-wide {
+  display: none;
+}
+
 .lower-body {
   padding: 15px;
 }
@@ -73,32 +82,38 @@ header {
   align-items: center;
 }
 
+.site-sections-container div a {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
 .site-sections-images {
   width: 50%;
 }
 
-.info {
-  padding-top: 40px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-  padding-left: 0px;
+.info-section {
+  margin-top: 40px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  margin-left: 0px;
 }
 
-.line-up {
-  padding-top: 40px;
-  padding-right: 0px;
-  padding-bottom: 15px;
-  padding-left: 15px;
+.line-up-section {
+  margin-top: 40px;
+  margin-right: 0px;
+  margin-bottom: 15px;
+  margin-left: 15px;
 }
 
-.tickets {
+.tickets-section {
   padding-top: 15px;
   padding-right: 15px;
   padding-bottom: 40px;
   padding-left: 0px;
 }
 
-.gallery {
+.gallery-section {
   padding-top: 15px;
   padding-right: 0px;
   padding-bottom: 40px;
@@ -219,4 +234,29 @@ footer {
 .nav-contact:hover,
 .nav-take-part:hover {
   color: #9c9b3b;
+}
+
+@media screen and (min-width: 650px) {
+  .nav-container {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .announcements-image-full {
+    display: none;
+  }
+  .announcements-image-wide {
+    display: inline-block;
+    width: 100%;
+  }
+  .footer-nav {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .highlights-container {
+    background-color: blue;
+  }
 }/*# sourceMappingURL=styles.css.map */
